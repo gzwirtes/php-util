@@ -1,0 +1,20 @@
+{
+    "name":"gzwirtes/php-util",
+    "description":"Biblioteca Útil Adianti/PHP",
+    "type":"library",
+    "license": "GPL-3.0-or-later",
+    "authors":[
+        {
+            "name":"Gustavo Zwirtes",
+            "email":"gustavo.zts@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+            "GZInfo\\Util\\": "src/util/"
+        }
+    },
+    "require": {
+        "php": ">=7.0"
+    }
+}
