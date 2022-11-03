@@ -1,5 +1,5 @@
 <?php
-namespace Mycomponent\Database;
+namespace GZInfo\Adianti\Database;
 
 class TRecord extends \Adianti\Database\TRecord
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace GX4\Trait;
+namespace GZInfo\Adianti\Trait;
 
 use Adianti\Registry\TSession;
 use Adianti\Control\TPage;

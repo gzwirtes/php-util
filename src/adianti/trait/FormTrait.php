@@ -1,6 +1,6 @@
 <?php
 
-namespace GX4\Trait;
+namespace GZInfo\Adianti\Trait;
 
 use Exception;
 use Adianti\Control\TAction;

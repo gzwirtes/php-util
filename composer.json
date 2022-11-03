@@ -16,8 +16,9 @@
         "psr-4": {
             "GZInfo\\Util\\": "src/util",
             "GZInfo\\Trait\\": "src/adianti/trait",
-            "GZInfo\\Control\\": "src/adianti/control",
-            "GZInfo\\Database\\": "src/adianti/database"
+            "GZInfo\\Adianti\\Control\\": "src/adianti/control",
+            "GZInfo\\Adianti\\Database\\": "src/adianti/database",
+            "GZInfo\\Adianti\\Trait\\": "src/adianti/trait"
         }
     },
     "require": {
