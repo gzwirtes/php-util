@@ -389,3 +389,34 @@ if(!function_exists('_recebe_numero'))
 		return (float) str_replace(['.', ','], ['', '.'], $valor);
 	}
 }
+
+if(!function_exists('_set_db_date_hour'))
+{
+    function _set_db_date_hour ($data, $type = "all")
+	{
+		// $type = "date" retorna somente a data
+		// $type = "hora" retorna somente a hora
+		// $type = "all" retorna somente a data e hora
+
+		if(empty($data)){
+            return '';
+        }
+
+		$date = new DateTime($data);
+
+		// var_dump($date);
+
+		if ($type == "data")
+		{
+			return $date->format('Y-m-d');
+		}
+		else if ($type == "hora")
+		{
+			return $date->format('h:i:s');
+		}
+		else
+		{
+			return $date->format('Y-m-d h:i:s');
+		}
+	}
+}
