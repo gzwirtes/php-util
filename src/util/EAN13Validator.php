@@ -5,7 +5,6 @@ namespace GZInfo\Util;
 
 class EAN13Validator
 {
-
     /**
      * @param $ean
      * @return bool

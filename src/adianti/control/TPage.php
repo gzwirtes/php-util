@@ -1,5 +1,5 @@
 <?php
-namespace Mycomponent\Control;
+namespace Mycomponent\Adianti\Control;
 
 use Adianti\Registry\TSession;
 

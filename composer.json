@@ -12,9 +12,16 @@
     "autoload":{
         "files":[
             "src/Util.php"
-        ]
+        ],
+        "psr-4": {
+            "GZInfo\\Util\\": "src/util",
+            "GZInfo\\Trait\\": "src/adianti/trait",
+            "GZInfo\\Control\\": "src/adianti/control",
+            "GZInfo\\Database\\": "src/adianti/database"
+        }
     },
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.0",
+        "phpmailer/phpmailer": "^6.0"
     }
 }
