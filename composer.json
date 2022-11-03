@@ -10,9 +10,9 @@
         }
     ],
     "autoload":{
-        "psr-4": {
-            "GZInfo\\Util\\": "src/util/"
-        }
+        "files":[
+            "src/Util.php"
+        ]
     },
     "require": {
         "php": ">=7.0"
