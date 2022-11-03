@@ -381,3 +381,11 @@ if(!function_exists('_on_delete_file'))
         }
     }
 }
+
+if(!function_exists('_recebe_numero'))
+{
+    function _recebe_numero ($valor)
+	{
+		return (float) str_replace(['.', ','], ['', '.'], $valor);
+	}
+}
