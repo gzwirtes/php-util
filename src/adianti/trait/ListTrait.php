@@ -16,10 +16,10 @@ trait ListTrait
 
     public function onClearFilters($param = null)
     {
-        TSession::setValue(__CLASS__.'_filter_data', NULL);
-        TSession::setValue(__CLASS__.'_filters', NULL);
+        TSession::setValue(__CLASS__."_filter_data", NULL);
+        TSession::setValue(__CLASS__."_filters",     NULL);
 
-        $this->onReload(['offset' => 0, 'first_page' => 1]);
+        $this->onReload(["offset" => 0, "first_page" => 1]);
     }
 
     public static function onShowCurtainFilters($param = null)
@@ -28,28 +28,28 @@ trait ListTrait
         {
             $filter = new self([]);
 
-            $btnClose = new TButton('closeCurtain');
-            $btnClose->class = 'btn btn-sm btn-default';
-            $btnClose->style = 'margin-right:10px;';
+            $btnClose          = new TButton("closeCurtain");
+            $btnClose->class   = "btn btn-sm btn-default";
+            $btnClose->style   = "margin-right:10px;";
             $btnClose->onClick = "Template.closeRightPanel();";
             $btnClose->setLabel("Fechar");
-            $btnClose->setImage('fas:times');
+            $btnClose->setImage("fas:times");
 
             $filter->form->addHeaderWidget($btnClose);
 
             $page = new TPage();
-            $page->setTargetContainer('adianti_right_panel');
-            $page->setProperty('page-name', __CLASS__);
-            $page->setProperty('page_name', __CLASS__);
-            $page->adianti_target_container = 'adianti_right_panel';
-            $page->target_container = 'adianti_right_panel';
+            $page->setTargetContainer("adianti_right_panel");
+            $page->setProperty("page-name", __CLASS__);
+            $page->setProperty("page_name", __CLASS__);
+            $page->adianti_target_container = "adianti_right_panel";
+            $page->target_container = "adianti_right_panel";
             $page->add($filter->form);
             $page->setIsWrapped(true);
             $page->show();
         }
         catch (Exception $e)
         {
-            new TMessage('error', $e->getMessage());
+            new TMessage("error", $e->getMessage());
         }
     }
 }
