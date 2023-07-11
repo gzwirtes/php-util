@@ -5,7 +5,8 @@ namespace GZInfo\Util;
 use Aws\S3\Exception\S3Exception;
 use Aws\S3\S3Client;
 
-class S3{
+class S3
+{
     protected $aws_key;
     protected $aws_secret_key;
 
