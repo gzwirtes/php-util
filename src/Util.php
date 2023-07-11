@@ -1,5 +1,7 @@
 <?php
 
+use GZInfo\Util\Monetary;
+
 if(!function_exists('_limpar'))
 {
     function _limpar($var)
