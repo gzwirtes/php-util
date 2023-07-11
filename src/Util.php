@@ -506,14 +506,14 @@ if(!function_exists('_convert_number_to_words'))
 		if (($number >= 0 && (int) $number < 0) || (int) $number < 0 - PHP_INT_MAX) {
 			// overflow
 			trigger_error(
-				'convert_number_to_words só aceita números entre ' . PHP_INT_MAX . ' à ' . PHP_INT_MAX,
+				'_convert_number_to_words só aceita números entre ' . PHP_INT_MAX . ' à ' . PHP_INT_MAX,
 				E_USER_WARNING
 			);
 			return false;
 		}
 
 		if ($number < 0) {
-			return $negative . convert_number_to_words(abs($number));
+			return $negative . _convert_number_to_words(abs($number));
 		}
 
 		$string = $fraction = null;
@@ -539,7 +539,7 @@ if(!function_exists('_convert_number_to_words'))
 				$remainder = $number % 100;
 				$string = $dictionary[$hundreds];
 				if ($remainder) {
-					$string .= $conjunction . convert_number_to_words($remainder);
+					$string .= $conjunction . _convert_number_to_words($remainder);
 				}
 				break;
 			default:
@@ -547,15 +547,15 @@ if(!function_exists('_convert_number_to_words'))
 				$numBaseUnits = (int) ($number / $baseUnit);
 				$remainder = $number % $baseUnit;
 				if ($baseUnit == 1000) {
-					$string = convert_number_to_words($numBaseUnits) . ' ' . $dictionary[1000];
+					$string = _convert_number_to_words($numBaseUnits) . ' ' . $dictionary[1000];
 				} elseif ($numBaseUnits == 1) {
-					$string = convert_number_to_words($numBaseUnits) . ' ' . $dictionary[$baseUnit][0];
+					$string = _convert_number_to_words($numBaseUnits) . ' ' . $dictionary[$baseUnit][0];
 				} else {
-					$string = convert_number_to_words($numBaseUnits) . ' ' . $dictionary[$baseUnit][1];
+					$string = _convert_number_to_words($numBaseUnits) . ' ' . $dictionary[$baseUnit][1];
 				}
 				if ($remainder) {
 					$string .= $remainder < 100 ? $conjunction : $separator;
-					$string .= convert_number_to_words($remainder);
+					$string .= _convert_number_to_words($remainder);
 				}
 				break;
 		}
