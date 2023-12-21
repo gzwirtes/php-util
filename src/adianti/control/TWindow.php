@@ -6,7 +6,7 @@ use Adianti\Registry\TSession;
 if (!defined('CONEXAO'))
     define('CONEXAO', TSession::getValue('conexao'));
 
-class TPage extends \Adianti\Control\TPage
+class TWindow extends \Adianti\Control\TWindow
 {
     protected static $database = CONEXAO;
 
