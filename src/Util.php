@@ -288,12 +288,19 @@ if(!function_exists('_remove_mask_numeric'))
 {
     function _remove_mask_numeric($value)
 	{
-		$value = str_replace( '.', '',  $value);
-		$value = str_replace( ',', '.', $value);
-		$value = str_replace( 'R$', '', $value);
-		$value = str_replace( ' ', '',  $value);
+		if ($value)
+		{
+			$value = str_replace( '.', '',  $value);
+			$value = str_replace( ',', '.', $value);
+			$value = str_replace( 'R$', '', $value);
+			$value = str_replace( ' ', '',  $value);
 
-		return $value;
+			return $value;
+		}
+		else
+		{
+			return FALSE;
+		}
 	}
 }
 
@@ -301,7 +308,10 @@ if(!function_exists('_remove_mask'))
 {
     function _remove_mask($value)
 	{
-		return preg_replace('/[^a-z\d]+/i', '', $value);
+		if ($value)
+			return preg_replace('/[^a-z\d]+/i', '', $value);
+		else
+			return FALSE;
 	}
 }
 
