@@ -16,6 +16,7 @@
         "psr-4": {
             "GZInfo\\Util\\": "src/util",
             "GZInfo\\Trait\\": "src/adianti/trait",
+            "GZInfo\\Exception\\": "src/exception",
             "GZInfo\\Adianti\\Control\\": "src/adianti/control",
             "GZInfo\\Adianti\\Database\\": "src/adianti/database",
             "GZInfo\\Adianti\\Trait\\": "src/adianti/trait"
