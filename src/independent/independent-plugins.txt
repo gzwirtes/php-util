@@ -1,0 +1,10 @@
+vendor/gabrielmanica/pacote_util/independent/js/moment.min.js
+vendor/gabrielmanica/pacote_util/independent/js/fullcalendar.min.js
+vendor/gabrielmanica/pacote_util/independent/js/iziToast.min.js
+vendor/gabrielmanica/pacote_util/independent/js/php.min.js
+vendor/gabrielmanica/pacote_util/independent/js/fuse.min.js
+vendor/gabrielmanica/pacote_util/independent/js/html5-qrcode.min.js
+vendor/gabrielmanica/pacote_util/independent/js/cropper.min.js
+vendor/gabrielmanica/pacote_util/independent/js/zxing.index.min.js
+vendor/gabrielmanica/pacote_util/independent/js/webcam.min.js
+vendor/gabrielmanica/pacote_util/independent/js/pickr.min.js
