@@ -19,8 +19,10 @@
             "GZInfo\\Exception\\": "src/exception",
             "GZInfo\\Adianti\\Control\\": "src/adianti/control",
             "GZInfo\\Adianti\\Database\\": "src/adianti/database",
-            "GZInfo\\Adianti\\Trait\\": "src/adianti/trait"
-        }
+            "GZInfo\\Adianti\\Trait\\": "src/adianti/trait",
+            "GZInfo\\Adianti\\Widget\\Datagrid\\": "src/adianti/widget/datagrid",
+            "GZInfo\\Adianti\\Widget\\Dialog\\": "src/adianti/widget/dialog",
+            "GZInfo\\Adianti\\Widget\\Form\\": "src/adianti/widget/form"
     },
     "require": {
         "php": ">=7.0",

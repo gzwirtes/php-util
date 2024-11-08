@@ -1,0 +1,22 @@
+.bdaterange-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+    height: unset;
+    justify-content: center;
+    align-items: center;
+}
+
+.bdaterange-container .easepick-wrapper {
+    position: fixed !important;
+    z-index: 10;
+}
+
+.bdaterange-container input {
+    text-align: center;
+}
+
+.bdaterange-container.start_end .bdaterange_end_field{
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+}
