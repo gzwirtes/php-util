@@ -23,9 +23,10 @@
             "GZInfo\\Adianti\\Widget\\Datagrid\\": "src/adianti/widget/datagrid",
             "GZInfo\\Adianti\\Widget\\Dialog\\": "src/adianti/widget/dialog",
             "GZInfo\\Adianti\\Widget\\Form\\": "src/adianti/widget/form"
-    },
-    "require": {
-        "php": ">=7.0",
-        "phpmailer/phpmailer": "^6.0"
+        },
+        "require": {
+            "php": ">=7.0",
+            "phpmailer/phpmailer": "^6.0"
+        }
     }
 }
