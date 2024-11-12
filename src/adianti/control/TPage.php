@@ -12,6 +12,7 @@ class TPage extends \Adianti\Control\TPage
 
     public function render($pattern, $object, $cast = null)
     {
+        $pattern = $pattern ?? '';
         $content = $pattern;
         if (preg_match_all('/\{(.*?)\}/', $pattern, $matches)) {
             foreach ($matches[0] as $match) {
